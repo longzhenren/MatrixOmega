@@ -11,13 +11,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
+
 import Jama.Matrix;
 import org.jfree.chart.ChartFactory;  
 import org.jfree.chart.ChartFrame;  
-import org.jfree.chart.JFreeChart;  
-import org.jfree.chart.axis.NumberAxis;  
-import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.JFreeChart;
 import org.jfree.chart.labels.StandardXYToolTipGenerator;
 import org.jfree.chart.plot.DatasetRenderingOrder;
 import org.jfree.chart.plot.PlotOrientation;  
@@ -318,7 +316,7 @@ public class LinearRegression extends JPanel implements ActionListener{
             ChartFrame chartFramemts = new ChartFrame("散点图和拟合直线", jfc);
     		chartFramemts.pack();
     		chartFramemts.setVisible(true); 
-    		switch (Calculator.n)
+    		switch (ZNBCalculator.n)
     		{
     			case 1:
     				jtb.setText("回归方程为:y = " + String.format("%.1f", tempm.get("a"))+ "x + " + String.format("%.1f", tempm.get("b")) +"\n"

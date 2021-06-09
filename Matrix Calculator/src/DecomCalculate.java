@@ -98,7 +98,7 @@ public class DecomCalculate extends JPanel implements ActionListener
         		jtresult.setText("矩阵A存在以下问题:\n" + t);
         		return;
         	}
-        	result = Calculate.CalculateChoDecom(jta.getText());
+        	result = CalculateCore.CalculateChoDecom(jta.getText());
         	if (result==null)
         	{
         		jtresult.setText("该矩阵不是正定对称矩阵，请检查输入!");
@@ -117,7 +117,7 @@ public class DecomCalculate extends JPanel implements ActionListener
         		jtresult.setText("矩阵A存在以下问题:\n" + t);
         		return;
         	}
-        	result = Calculate.CalculateLUDecom(jta.getText());
+        	result = CalculateCore.CalculateLUDecom(jta.getText());
         	if (result==null)
         	{
         		jtresult.setText("该矩阵不可LU分解,请重新输入");

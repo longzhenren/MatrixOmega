@@ -88,8 +88,8 @@ public class EigCalculate extends JPanel implements ActionListener
         		return;
         	}
         	
-        	result1 = Calculate.CalculateEigD(jta.getText());  
-        	result2 = Calculate.CalculateEigV(jta.getText()); 
+        	result1 = CalculateCore.CalculateEigD(jta.getText());
+        	result2 = CalculateCore.CalculateEigV(jta.getText());
         } 
         if (result1 == null)
         {
